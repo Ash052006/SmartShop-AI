@@ -1,0 +1,47 @@
+{
+    "name": "Browser",
+    "version": "1.0",
+    "description": "Customer is casually browsing products without strong buying intent.",
+    "shopper_state": "Browser",
+    "persona": "Casual Visitor",
+
+    "priority": {
+        "level": 1,
+        "reason": "Lowest purchase intent among all shopper states."
+    },
+
+    "base_score": 25,
+
+    "conditions": {
+        "mandatory": {
+            "purchase_completed": false
+        },
+        "optional": {
+            "product_views": {
+                "max": 3
+            },
+            "comparison_count": {
+                "max": 0
+            },
+            "cart_additions": {
+                "max": 0
+            },
+            "review_reads": {
+                "max": 1
+            }
+        }
+    },
+
+    "evidence": [
+        "Viewed only a few products.",
+        "Did not compare products.",
+        "Did not add products to cart.",
+        "Did not complete a purchase."
+    ],
+
+    "recommendations": [
+        "Show trending products.",
+        "Recommend popular categories.",
+        "Display personalized product suggestions."
+    ]
+}

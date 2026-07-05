@@ -1,0 +1,44 @@
+{
+    "name": "Discount Seeker",
+    "version": "1.0",
+    "description": "Customer actively searches for discounts before making a purchase.",
+    "shopper_state": "Discount Seeker",
+    "persona": "Price Conscious Shopper",
+
+    "priority": {
+        "level": 3,
+        "reason": "Price-sensitive behavior is stronger than comparison behavior."
+    },
+
+    "base_score": 80,
+
+    "conditions": {
+        "mandatory": {
+            "coupon_used": true
+        },
+        "optional": {
+            "comparison_count": {
+                "min": 1
+            },
+            "review_reads": {
+                "min": 2
+            },
+            "product_views": {
+                "min": 3
+            }
+        }
+    },
+
+    "evidence": [
+        "Applied a coupon.",
+        "Compared products.",
+        "Viewed several products.",
+        "Looked for discounts."
+    ],
+
+    "recommendations": [
+        "Offer a limited-time coupon.",
+        "Highlight ongoing sales.",
+        "Show discounted alternatives."
+    ]
+}

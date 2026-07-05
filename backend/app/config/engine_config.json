@@ -1,0 +1,7 @@
+{
+    "optional_match_bonus": 5,
+    "priority_multiplier": 2,
+    "max_engagement_bonus": 10,
+    "engagement_divisor": 5,
+    "max_confidence": 100
+}

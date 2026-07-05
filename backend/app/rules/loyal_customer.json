@@ -1,0 +1,41 @@
+{
+    "name": "Loyal Customer",
+    "version": "1.0",
+    "description": "Customer successfully completed a purchase.",
+    "shopper_state": "Loyal Customer",
+    "persona": "Returning Customer",
+
+    "priority": {
+        "level": 5,
+        "reason": "Completed purchase is the strongest indicator of customer loyalty."
+    },
+
+    "base_score": 100,
+
+    "conditions": {
+        "mandatory": {
+            "purchase_completed": true
+        },
+        "optional": {
+            "checkout_started": true,
+            "cart_additions": {
+                "min": 1
+            },
+            "product_views": {
+                "min": 2
+            }
+        }
+    },
+
+    "evidence": [
+        "Completed a purchase.",
+        "Successfully finished checkout.",
+        "Shows strong purchase intent."
+    ],
+
+    "recommendations": [
+        "Offer loyalty rewards.",
+        "Recommend complementary products.",
+        "Show premium or exclusive products."
+    ]
+}

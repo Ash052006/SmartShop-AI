@@ -1,0 +1,45 @@
+{
+    "name": "Comparer",
+    "version": "1.0",
+    "description": "Customer is comparing products before making a purchase decision.",
+    "shopper_state": "Comparer",
+    "persona": "Research Shopper",
+
+    "priority": {
+        "level": 2,
+        "reason": "Comparison behavior is stronger than casual browsing."
+    },
+
+    "base_score": 60,
+
+    "conditions": {
+        "mandatory": {
+            "comparison_count": {
+                "min": 1
+            }
+        },
+        "optional": {
+            "product_views": {
+                "min": 3
+            },
+            "review_reads": {
+                "min": 2
+            },
+            "search_count": {
+                "min": 1
+            }
+        }
+    },
+
+    "evidence": [
+        "Compared multiple products.",
+        "Viewed several product pages.",
+        "Read customer reviews."
+    ],
+
+    "recommendations": [
+        "Show comparison table.",
+        "Highlight product differences.",
+        "Display customer ratings."
+    ]
+}

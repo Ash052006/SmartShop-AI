@@ -1,0 +1,42 @@
+{
+    "name": "Cart Abandoner",
+    "version": "1.0",
+    "description": "Customer added products to cart but left without completing the purchase.",
+    "shopper_state": "Cart Abandoner",
+    "persona": "Hesitant Buyer",
+
+    "priority": {
+        "level": 4,
+        "reason": "Cart abandonment indicates stronger buying intent than browsing or comparison."
+    },
+
+    "base_score": 90,
+
+    "conditions": {
+        "mandatory": {
+            "cart_additions": {
+                "min": 1
+            },
+            "purchase_completed": false
+        },
+        "optional": {
+            "checkout_started": true,
+            "coupon_used": true,
+            "product_views": {
+                "min": 3
+            }
+        }
+    },
+
+    "evidence": [
+        "Added products to cart.",
+        "Did not complete purchase.",
+        "Left before checkout completion."
+    ],
+
+    "recommendations": [
+        "Send cart reminder.",
+        "Offer free shipping.",
+        "Provide a limited-time coupon."
+    ]
+}
