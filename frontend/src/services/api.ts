@@ -2,7 +2,7 @@ import axios from "axios";
 import type { ClassifyRequest, ClassificationResponse } from "../types/api";
 
 const apiClient = axios.create({
-  baseURL: "http://127.0.0.1:8000",
+  baseURL: "https://smartshop-ai-backend-ubi2.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },
