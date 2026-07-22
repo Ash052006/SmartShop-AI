@@ -13,6 +13,8 @@ It analyzes **mock user event streams**, extracts behavioral features, classifie
 
 Unlike many AI-first solutions, SmartShop AI uses a **deterministic rules engine** for classification and an **LLM only for business reasoning**, making the system transparent, explainable, and reproducible.
 
+To Visit-> https://smart-shop-ai-one.vercel.app/
+
 ---
 
 ## ✨ Features
