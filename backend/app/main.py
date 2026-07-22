@@ -20,8 +20,8 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://localhost:5174",
         "http://127.0.0.1:5174",
-        # Production frontend
-        "https://smart-shop-bb8254qpw-ashes24x7.vercel.app",
+        # New Vercel URL
+        "https://smart-shop-ai-one.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
