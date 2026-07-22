@@ -15,7 +15,7 @@ class AIService:
             api_key=os.getenv("GROQ_API_KEY")
         )
 
-        self.model = os.getenv("GROQ_MODEL")
+        self.model = "llama-3.3-70b-versatile"
 
     def build_prompt(
         self,
