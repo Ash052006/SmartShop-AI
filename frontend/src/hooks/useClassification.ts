@@ -37,17 +37,18 @@ export function useClassification(): UseClassificationReturn {
 
       setState({ result: response, loading: false, error: null });
     } catch (err) {
-      const error = err instanceof Error ? err : new Error("Unknown error");
-      setState({
-        result: null,
-        loading: false,
-        error: {
-          message: error.message,
-          detail: "Check that the backend server is running at http://127.0.0.1:8000",
-        },
-      });
-    }
-  }, []);
+        const error = err instanceof Error ? err : new Error("Unknown error");
+
+        setState({
+          result: null,
+          loading: false,
+          error: {
+            message: error.message,
+            detail: error.stack,
+          },
+        });
+      }
+  }, []);₹
 
   const reset = useCallback(() => {
     setState({ result: null, loading: false, error: null });
