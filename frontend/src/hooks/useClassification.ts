@@ -48,7 +48,7 @@ export function useClassification(): UseClassificationReturn {
           },
         });
       }
-  }, []);₹
+  }, []);
 
   const reset = useCallback(() => {
     setState({ result: null, loading: false, error: null });
